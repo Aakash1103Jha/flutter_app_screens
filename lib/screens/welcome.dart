@@ -16,7 +16,7 @@ class Welcome extends StatelessWidget {
             width: double.infinity,
             child: const Text("Welcome to Travel The World!",
                 style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.blue,
                     fontWeight: FontWeight.w300,
                     fontSize: 20,
                     decoration: TextDecoration.none)),
@@ -35,7 +35,7 @@ class Welcome extends StatelessWidget {
                           style: ButtonStyle(
                               elevation: MaterialStateProperty.all(0),
                               backgroundColor: MaterialStateProperty.all(
-                                  Colors.grey.shade600),
+                                  Colors.blue.shade800),
                               shape: MaterialStateProperty.all<OutlinedBorder>(
                                   RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(0)))),
@@ -50,12 +50,13 @@ class Welcome extends StatelessWidget {
                           style: ButtonStyle(
                               elevation: MaterialStateProperty.all(0),
                               backgroundColor:
-                                  MaterialStateProperty.all(Colors.grey),
+                                  MaterialStateProperty.all(Colors.blue),
                               shape: MaterialStateProperty.all<OutlinedBorder>(
                                   RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(0)))),
                           onPressed: () {},
-                          child: const Text("Register"))),
+                          child: const Text("Register",
+                              style: TextStyle(color: Colors.white)))),
                   Container(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 10),
@@ -67,15 +68,13 @@ class Welcome extends StatelessWidget {
                                   MaterialStateProperty.all(Colors.transparent),
                               shape: MaterialStateProperty.all<OutlinedBorder>(
                                   RoundedRectangleBorder(
-                                      side: BorderSide(
-                                          color: Colors.grey.shade800),
+                                      side:
+                                          const BorderSide(color: Colors.blue),
                                       borderRadius: BorderRadius.circular(0)))),
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "Continue as Guest",
-                            style: TextStyle(
-                                color: Colors.grey.shade800,
-                                fontWeight: FontWeight.w300),
+                            style: TextStyle(fontWeight: FontWeight.w300),
                           ))),
                 ],
               ))
