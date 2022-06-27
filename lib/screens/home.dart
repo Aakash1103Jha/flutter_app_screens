@@ -24,6 +24,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         actions: [
           IconButton(
             icon: const Icon(
@@ -35,6 +36,7 @@ class _HomeState extends State<Home> {
         title: const Text("Home"),
       ),
       floatingActionButton: FloatingActionButton(
+        elevation: 0,
         child: const Icon(Icons.add),
         onPressed: () => showModal(context),
       ),
