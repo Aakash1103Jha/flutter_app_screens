@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter_app_screens/widgets/add_transaction.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class _HomeState extends State<Home> {
           return Container(
             padding: const EdgeInsets.all(10),
             height: double.infinity,
-            child: const Text("Modal Open"),
+            child: const AddTransaction(),
           );
         });
   }
